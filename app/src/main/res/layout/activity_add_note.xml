@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:background="@color/blue"
+        tools:context=".AddNoteActivity"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/addNoteHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Add Week Task."
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/saveButton"
+            android:layout_width="66dp"
+            android:layout_height="73dp"
+            android:layout_alignTop="@id/addNoteHeading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="567dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/baseline_done_24" />
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the Task"
+            android:padding="12dp"
+            android:backgroundTint="#FAF1F2F6"
+            android:textSize="20sp"
+            android:layout_below="@id/addNoteHeading"
+            android:background="@drawable/orange_border"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="376dp"
+            android:layout_height="407dp"
+            android:layout_below="@id/titleEditText"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/orange_border"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins"
+            android:gravity="top"
+            android:hint="Enter the description"
+            android:padding="12dp"
+            android:textSize="18sp" />
+
+</RelativeLayout>
